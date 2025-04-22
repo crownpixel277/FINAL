@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Fake Detection - Protect Yourself from Digital Deception</title>
+  <meta name="description" content="Our AI-powered platform detects deep fake images, phishing emails, fake audio, social media misinformation, and malicious URLs to keep you safe online.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font import -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>DeepFakeGuard</span>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <a href="#features">Features</a>
+            <a href="#awareness">Cyber Awareness</a>
+            <a href="#how-it-works">How It Works</a>
+          </nav>
+          <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sun">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-moon">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+            <button class="btn btn-outline">Log in</button>
+            <button class="btn btn-primary">Sign up</button>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="container">
+          <nav class="mobile-nav">
+            <a href="#features">Features</a>
+            <a href="#awareness">Cyber Awareness</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#">Log in</a>
+            <a href="#" class="mobile-signup">Sign up</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="alert-banner animate-fade-in">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              <span>Deep fakes and phishing scams are on the rise—stay informed!</span>
+            </div>
+
+            <h1 class="animate-fade-in">
+              <span class="text-primary">Protect Yourself</span>
+              <span>from Digital Deception</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-in">
+              Our AI-powered platform detects deep fake images, phishing emails, and more to keep you safe online.
+            </p>
+            <div class="hero-buttons animate-fade-in">
+              <button class="btn btn-primary btn-lg">Sign Up</button>
+              <button class="btn btn-outline btn-lg">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Background elements -->
+        <div class="background-elements">
+          <div class="bg-circle bg-circle-1"></div>
+          <div class="bg-circle bg-circle-2"></div>
+          <div class="bg-circle bg-circle-3"></div>
+          <div class="bg-circle bg-circle-4"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about">
+        <div class="container">
+          <h2 class="section-title">About the Project</h2>
+          <div class="about-content">
+            <div class="about-text animate-on-scroll">
+              <p>
+                We use advanced AI (powered by TensorFlow) to detect manipulated images, fraudulent emails, and other
+                cyber threats, empowering you to stay safe online.
+              </p>
+              <p>
+                Our final-year computer science project combines cutting-edge machine learning techniques with practical
+                cybersecurity applications to create a comprehensive defense against digital deception.
+              </p>
+            </div>
+            <div class="stat-card animate-on-scroll">
+              <div class="stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+              <div>
+                <h3>Cyber Stat</h3>
+                <p class="stat-number">90%+</p>
+                <p>
+                  Over 90% of cyberattacks start with phishing emails. Our technology helps you identify and avoid these
+                  threats before they can cause harm.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label animate-on-scroll">Features</span>
+            <h2 class="section-title animate-on-scroll">Comprehensive Protection Against Digital Threats</h2>
+            <p class="section-subtitle animate-on-scroll">
+              Our AI-powered platform offers multiple layers of defense to keep you safe from various forms of digital
+              deception.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card animate-on-scroll">
+              <div class="feature-content">
+                <div class="feature-header">
+                  <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                  </div>
+                  <h3>Deep Fake Image Detection</h3>
+                  <p>Identifies manipulated images created by AI.</p>
+                </div>
+                <div class="feature-details">
+                  <div class="feature-example">
+                    <h4>Example Use Case</h4>
+                    <p>Spot fake photos in scams.</p>
+                  </div>
+                  <div class="feature-awareness">
+                    <h4>Cyber Awareness</h4>
+                    <p>Deep fakes can impersonate anyone—verify images.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card animate-on-scroll">
+              <div class="feature-content">
+                <div class="feature-header">
+                  <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <h3>Phishing Email Detection</h3>
+                  <p>Scans emails for suspicious links and language.</p>
+                </div>
+                <div class="feature-details">
+                  <div class="feature-example">
+                    <h4>Example Use Case</h4>
+                    <p>Protect your data from fraud.</p>
+                  </div>
+                  <div class="feature-awareness">
+                    <h4>Cyber Awareness</h4>
+                    <p>1 in 4 users falls for phishing emails.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card animate-on-scroll">
+              <div class="feature-content">
+                <div class="feature-header">
+                  <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                      <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                      <line x1="12" y1="19" x2="12" y2="23"></line>
+                      <line x1="8" y1="23" x2="16" y2="23"></line>
+                    </svg>
+                  </div>
+                  <h3>Fake Audio Detection</h3>
+                  <p>Detects AI-generated or manipulated audio.</p>
+                </div>
+                <div class="feature-details">
+                  <div class="feature-example">
+                    <h4>Example Use Case</h4>
+                    <p>Avoid voice spoofing scams.</p>
+                  </div>
+                  <div class="feature-awareness">
+                    <h4>Cyber Awareness</h4>
+                    <p>Fake voices can mimic loved ones.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card animate-on-scroll">
+              <div class="feature-content">
+                <div class="feature-header">
+                  <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="18" cy="5" r="3"></circle>
+                      <circle cx="6" cy="12" r="3"></circle>
+                      <circle cx="18" cy="19" r="3"></circle>
+                      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                  </div>
+                  <h3>Social Media Misinformation</h3>
+                  <p>Flags fake news and manipulated posts.</p>
+                </div>
+                <div class="feature-details">
+                  <div class="feature-example">
+                    <h4>Example Use Case</h4>
+                    <p>Stop the spread of lies.</p>
+                  </div>
+                  <div class="feature-awareness">
+                    <h4>Cyber Awareness</h4>
+                    <p>Misinformation spreads 6x faster than truth.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card animate-on-scroll">
+              <div class="feature-content">
+                <div class="feature-header">
+                  <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                  </div>
+                  <h3>Malicious URL Detection</h3>
+                  <p>Identifies harmful links in emails or websites.</p>
+                </div>
+                <div class="feature-details">
+                  <div class="feature-example">
+                    <h4>Example Use Case</h4>
+                    <p>Stay safe from malware.</p>
+                  </div>
+                  <div class="feature-awareness">
+                    <h4>Cyber Awareness</h4>
+                    <p>80% of breaches start with a bad link.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cyber Awareness Section -->
+      <section id="awareness" class="cyber-awareness">
+        <div class="container">
+          <h2 class="section-title">Cyber Awareness</h2>
+          <p class="section-subtitle">
+            Stay informed about the evolving landscape of digital threats
+          </p>
+
+          <div class="awareness-grid">
+            <div class="timeline-card animate-on-scroll">
+              <h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                The Evolution of Digital Deception
+              </h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-year">1990s</div>
+                  <div class="timeline-content">Early phishing attacks targeting AOL users</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2000s</div>
+                  <div class="timeline-content">Sophisticated phishing targeting banks and payment systems</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2010s</div>
+                  <div class="timeline-content">Spear phishing targeting specific individuals and organizations</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2017</div>
+                  <div class="timeline-content">First deep fake videos appear online</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2019</div>
+                  <div class="timeline-content">Voice deep fakes used in financial fraud</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2020s</div>
+                  <div class="timeline-content">AI-generated deep fakes become increasingly realistic and accessible</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">Today</div>
+                  <div class="timeline-content">Combined threats using multiple deception techniques</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="awareness-content">
+              <div class="tips-card animate-on-scroll">
+                <h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  Staying Safe Online
+                </h3>
+                <ul class="tips-list">
+                  <li><span>1</span> Verify sources before sharing information</li>
+                  <li><span>2</span> Avoid clicking unknown links in emails</li>
+                  <li><span>3</span> Use strong, unique passwords for each account</li>
+                  <li><span>4</span> Enable two-factor authentication when available</li>
+                  <li><span>5</span> Be skeptical of urgent requests for money or information</li>
+                  <li><span>6</span> Check URLs carefully before entering credentials</li>
+                </ul>
+              </div>
+
+              <div class="cost-card animate-on-scroll">
+                <h3>The Cost of Cybercrime</h3>
+                <p class="cost-number">$6 Trillion</p>
+                <p>Annual global cost of cybercrime</p>
+
+                <div class="resource-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <a href="https://www.cisa.gov/topics/cyber-threats-and-advisories" target="_blank" rel="noopener noreferrer">
+                    Visit CISA.gov for more cybersecurity tips
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section id="how-it-works" class="how-it-works">
+        <div class="container">
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">
+            Our AI analyzes content using deep learning to spot fakes and protect you from digital deception
+          </p>
+
+          <div class="steps-container">
+            <div class="steps-line"></div>
+            <div class="steps">
+              <div class="step animate-on-scroll">
+                <div class="step-icon bg-blue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                </div>
+                <h3>Upload Content</h3>
+                <p>After logging in, upload the content you want to analyze (image, email, audio, URL, or text).</p>
+              </div>
+
+              <div class="step animate-on-scroll">
+                <div class="step-icon bg-purple">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+                <h3>AI Analysis</h3>
+                <p>Our advanced AI, powered by TensorFlow, analyzes the content using deep learning algorithms to detect manipulation or deception.</p>
+              </div>
+
+              <div class="step animate-on-scroll">
+                <div class="step-icon bg-green">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <h3>Get Results</h3>
+                <p>Receive detailed results showing whether the content is authentic or potentially deceptive, with an explanation of the findings.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="technology-card animate-on-scroll">
+            <h3>Our Technology</h3>
+            <p>
+              We use state-of-the-art deep learning models trained on thousands of examples of authentic and manipulated
+              content. Our algorithms analyze patterns, metadata, and content characteristics that are invisible to the
+              human eye but reveal signs of manipulation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <h2 class="section-title">Real-world protection</h2>
+          <p class="section-subtitle">
+            See how our technology is helping people stay safe online
+          </p>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-header">
+                <img src="https://via.placeholder.com/48" alt="Jane Smith" class="testimonial-image">
+                <div class="testimonial-author">
+                  <div class="author-name">Jane Smith</div>
+                  <div class="author-role">Small Business Owner</div>
+                </div>
+              </div>
+              <p class="testimonial-quote">
+                "This tool saved me from a sophisticated phishing scam that almost compromised my business accounts. The detection was quick and accurate."
+              </p>
+            </div>
+
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-header">
+                <img src="https://via.placeholder.com/48" alt="Michael Chen" class="testimonial-image">
+                <div class="testimonial-author">
+                  <div class="author-name">Michael Chen</div>
+                  <div class="author-role">IT Security Professional</div>
+                </div>
+              </div>
+              <p class="testimonial-quote">
+                "As someone who works in cybersecurity, I'm impressed by the accuracy of the deep fake detection. It's caught manipulated images that would have fooled most people."
+              </p>
+            </div>
+
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-header">
+                <img src="https://via.placeholder.com/48" alt="Sarah Johnson" class="testimonial-image">
+                <div class="testimonial-author">
+                  <div class="author-name">Sarah Johnson</div>
+                  <div class="author-role">Parent & Educator</div>
+                </div>
+              </div>
+              <p class="testimonial-quote">
+                "I use this tool to verify information before sharing it with my students. It's helped us have important conversations about digital literacy and online safety."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="container">
+          <div class="cta-content">
+            <div class="cta-icon animate-on-scroll">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h2 class="animate-on-scroll">
+              <span>Join thousands staying safe online</span>
+              <span>with our AI-powered protection</span>
+            </h2>
+            <p class="animate-on-scroll">
+              Create an account to access our full suite of deep fake and phishing detection tools.
+            </p>
+            <div class="cta-buttons animate-on-scroll">
+              <button class="btn btn-white btn-lg">Create Account</button>
+              <button class="btn btn-outline-white btn-lg">Explore Features</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>DeepFakeGuard</span>
+            </div>
+            <p>
+              Protecting you from digital deception with advanced AI technology.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#awareness">Cyber Awareness</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Research</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+          <p class="copyright">
+            &copy; 2025 Deep Fake Detection Project. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
